@@ -1,14 +1,33 @@
 import React from 'react';
 
 import { 
-    Container,
-    Title, 
+    Container, 
+    Header,
+    UserWrapper,
+    UserInfo,
+    Photo,
+    User,
+    UserGreeting,
+    UserName,
+    Icon
 } from './styles'
 
 export function Dashboard() {
     return(
-        <Container>
-            <Title>Dashboard</Title>
+        <Container>        
+            <Header>
+                <UserWrapper>
+                    <UserInfo>
+                        <Photo source={{uri: "https://avatars.githubusercontent.com/u/14222003?v=4"}} />
+                        <User>
+                            <UserGreeting>Olá,</UserGreeting>
+                            <UserName>Igor</UserName>
+                        </User>
+                    </UserInfo>
+
+                    <Icon name="power"/>
+                </UserWrapper>
+            </Header>
         </Container>
     ) 
 };
